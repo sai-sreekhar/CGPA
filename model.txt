@@ -1,0 +1,17 @@
+student
+    regno
+    cgpa
+    semesters - array of vectors
+    All courses - vector
+
+
+course
+    coursecode
+    grade
+
+
+All courses:
+course
+    coursecode
+    latest sem course taken idx
+    grade - vector
