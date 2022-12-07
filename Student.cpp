@@ -54,3 +54,12 @@ void Student::calculateCgpa()
     }
     cgpa = totalGradePoints / totalCredits;
 }
+
+void Student::getSemsGpa()
+{
+    for (int i = 1; i < NO_OF_SEMS; i++)
+    {
+        allSems[i].calculateGpa();
+        std::cout << "Semester " << i << " GPA: " << allSems[i].getGpa() << std::endl;
+    }
+}

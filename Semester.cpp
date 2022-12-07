@@ -45,7 +45,7 @@ void Semester::calculateGpa()
     double totalGradePoints = 0;
     for (int i = 0; i < coursesArr.size(); i++)
     {
-        totalGradePoints += coursesArr[i]->getCredits() * getGradePoint(coursesArr[i]->getSemGrade(this->getSemIdx()));
+        totalGradePoints += coursesArr[i]->getCredits() * getGradePoint(coursesArr[i]->getSemGrade(semIdx));
     }
     gpa = totalGradePoints / semCredits;
 }

@@ -21,6 +21,7 @@ public:
     double getCgpa();
     void setCgpa(double cgpa);
     void calculateCgpa();
+    void getSemsGpa();
 };
 
 #endif
