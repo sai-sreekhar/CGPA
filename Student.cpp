@@ -1,8 +1,9 @@
 #include "Student.h"
 #include "Common.h"
 
-Student::Student()
+Student::Student(std:: string regNo)
 {
+    this->regNo = regNo;
     cgpa = 0;
     totalCredits = 0;
     for (int i = 0; i < NO_OF_SEMS; i++)
@@ -62,4 +63,19 @@ void Student::getSemsGpa()
         allSems[i].calculateGpa();
         std::cout << "Semester " << i << " GPA: " << allSems[i].getGpa() << std::endl;
     }
+}
+
+void Student::setNextStudent(Student* nextStudent)
+{
+    this->next = next;
+}
+
+Student* Student::getNextStudent()
+{
+    return next;
+}
+
+std::string Student::getRegNo()
+{
+    return regNo;
 }

@@ -4,7 +4,7 @@
 
 int main()
 {
-    Student *s1 = new Student();
+    Student *s1 = new Student("21BDS0387");
     s1->addCourse(new Course("CS101", 'S', 1, 4), 1);
     s1->addCourse(new Course("CS102", 'S', 1, 4), 1);
     s1->addCourse(new Course("CS103", 'S', 1, 4), 1);
