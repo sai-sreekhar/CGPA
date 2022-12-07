@@ -4,12 +4,6 @@ student
     semesters - array of vectors
     All courses - vector
 
-
-course
-    coursecode
-    grade
-
-
 All courses:
 course
     coursecode
